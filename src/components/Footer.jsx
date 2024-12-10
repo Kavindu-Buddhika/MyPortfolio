@@ -9,9 +9,9 @@ import { AiFillGithub } from "react-icons/ai";
 const Footer = () => (
   <footer id="contactMe" className="bg-gray-900 sm:px-16 px-6">
     <div
-      className={`${layout.sectionReverse} xl:max-w-[1280px] w-full mx-auto gap-y-4 `}
+      className={`${layout.sectionReverse} xl:max-w-[1280px] w-full mx-auto gap-y-4 sm:!flex-row`}
     >
-      <div className={` ${layout.sectionInfo}`}>
+      <div className={` ${layout.sectionInfo} items-center sm:items-start`}>
         <h2 className="text-xl font-bold text-gray-800 font-poppins dark:text-white hover:text-gray-700 dark:hover:text-gray-300">
           {aboutMe.name}
         </h2>
@@ -34,7 +34,7 @@ const Footer = () => (
           ))}
         </div>
 
-        <div className="grid grid-cols-2">
+        <div className="flex items-center">
           {/* styles is a prop */}
           <a href={resumeLink} target="_blank">
             <Button
@@ -46,11 +46,11 @@ const Footer = () => (
         </div>
       </div>
 
-      <div className="md:ml-auto mt-10 md:mt-0">
+      <div className="flex justify-center md:ml-auto mt-10 md:mt-0">
         <img
           src={profilePic}
           alt="Kavindu Buddhika"
-          className="w-[200px] h-[200px] border-2 border-teal-200 relative z-[5] rounded-full"
+          className="w-[150px] h-[150px] border-2 border-teal-200 relative z-[5] rounded-full"
         />
       </div>
     </div>
