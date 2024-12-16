@@ -17,10 +17,8 @@ const defaultOptions = {
 const FeatureCard = ({
   icon,
   title,
-  degree,
+  location,
   duration,
-  content1,
-  content2,
   index,
 }) => (
   <div
@@ -37,19 +35,11 @@ const FeatureCard = ({
         {title}
       </h4>
       <p className="font-poppins font-normal text-white text-[16px] leading-[30px] mb-1 ">
-        {degree}
+        {location}
       </p>
       <p className="font-poppins font-normal text-dimWhite text-[14px] leading-[30px] mb-1">
         {duration}
       </p>
-      <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[30px] mb-1">   
-      ● {content1}
-      </p>
-      {content2 && (
-        <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[30px] mb-1">     
-      ● {content2}
-        </p>
-      )}
     </div>
   </div>
 );

@@ -5,6 +5,7 @@ import {
   eligerlogo,
   villa,
   reviewer,
+  moratuwalogo,
 } from "../assets";
 
 import {
@@ -31,14 +32,22 @@ import {
   SiDialogflow,
 } from "react-icons/si";
 
-import { DiCss3, DiMsqlServer,DiPostgresql } from "react-icons/di";
+import { DiCss3, DiMsqlServer, DiPostgresql } from "react-icons/di";
 
-import { TbBrandCSharp, TbBrandNextjs, TbBrandThreejs, TbBrandTypescript, TbBrandFlutter } from "react-icons/tb";
+import {
+  TbBrandCSharp,
+  TbBrandNextjs,
+  TbBrandThreejs,
+  TbBrandTypescript,
+  TbBrandFlutter,
+} from "react-icons/tb";
+
+// import { MdCall } from "react-icons/md";
 
 import { VscVscodeInsiders } from "react-icons/vsc";
+import { link } from "framer-motion/client";
 
-export const resumeLink =
-  "https://drive.google.com/file/d/1vkxyMDB5_KpMwt4QXFgT2aqdRizr8Czh/view?usp=sharing";
+export const resumeLink = "/Kavindu Buddhika Resume.pdf";
 
 export const callToAction = "https://www.linkedin.com/in/kavindu-buddhika";
 
@@ -59,10 +68,6 @@ export const navLinks = [
     id: "projects",
     title: "Projects",
   },
-  // {
-  //   id: "extraCurricular",
-  //   title: "Extra Curricular",
-  // },
   {
     id: "contactMe",
     title: "Contact Me",
@@ -75,19 +80,15 @@ export const educationList = [
     id: "education-1",
     icon: uwu,
     title: " BSc (Hons) Computer Science & Technology",
-    degree: "Bachelor of Science",
+    location: "Uva Wellassa Univeristy of Sri Lanka",
     duration: "2021 - 2025",
-    content1: "Major: Software Development",
-    content2: "Minor: Human-Computer Interaction",
   },
   {
     id: "education-2",
     icon: pba,
-    title: "Asoka Vidyalaya Colombo-10",
-    degree: "",
+    title: "Secondary School",
+    location: "Asoka Vidyalaya Colombo-10",
     duration: "2012-2019",
-    content1:
-      "Completed G.C.E. Advanced Level examination in the Mathematics stream with a successful academic record.",
   },
 ];
 
@@ -95,11 +96,21 @@ export const educationList = [
 export const achievements = [
   {
     id: "a-1",
+    icon: moratuwalogo,
+    event: "FRONT-END WEB DEVELOPMENT CERTIFICATE",
+    position:
+      "University of Moratuwa Centre for Open & Distance Learning - CODL",
+    content1: "Successfully Completed",
+    link: "https://open.uom.lk/lms/mod/customcert/verify_certificate.php?contextid=5101&code=CYUK8xFq3e&qrcode=1",
+  },
+
+  {
+    id: "a-2",
     icon: cscu,
     event: "CSCU | Certified Secure Computer User v2 exam",
-    position: "Successfully completed",
-    content1: "EC-Council certification",
-    content2: "All requirements and criteria for Certified Secure Computer User v2 certification through examination administrated by EC-Council.",
+    position: "EC-Council Certification",
+    content1: "Successfully Completed",
+    link: "/ECC-CSCU-Certificate.pdf",
   },
 ];
 
@@ -241,8 +252,7 @@ export const projects = [
     github: "https://github.com/kavindu-mane/The-Villa-Hotel",
     link: "",
     image: villa,
-    content:
-      "Streamlined Room Booking and Food Reservation Web Application",
+    content: "Streamlined Room Booking and Food Reservation Web Application",
     stack: [
       {
         id: "icon-1",
@@ -343,44 +353,6 @@ export const projects = [
   },
 ];
 
-// List out the extra curricular activities.
-// export const extraCurricular = [
-//   {
-//     id: 1,
-//     organisation: "Devfolio",
-//     title: "UniDAO Lead",
-//     duration: "December 2021 - Present",
-//     content: [
-//       {
-//         text: "Selected among 5 students across the country to lead the initiative and grow the culture of Blockchain and Ethereum, powered by Devfolio.",
-//         link: "https://www.linkedin.com/feed/update/urn:li:activity:7097977924686942209/",
-//       },
-//       {
-//         text: "Led a cohort of 37 selected students over 6 weeks to learn and build in the Ethereum ecosystem.",
-//         link: "https://www.linkedin.com/feed/update/urn:li:activity:7095310520282480641/",
-//       },
-//     ],
-//     logo: devfolio,
-//   },
-//   {
-//     id: 2,
-//     organisation: "Google Developer Student Club, NITK",
-//     title: "Co-Chair",
-//     duration: "December 2021 - Present",
-//     content: [
-//       {
-//         text: "Started HackClub to promote and spread the culture of Hackathons in the college. 20+ hackathons particiaptions, 15+ wins over the year.",
-//         link: "",
-//       },
-//       {
-//         text: "Co-designed and developed the official website of Incident, NITK with 15K+ visitors",
-//         link: "https://incident.nitk.ac.in/",
-//       },
-//     ],
-//     logo: gdsc,
-//   },
-// ];
-
 // Links to the social media profiles
 export const socialMedia = [
   {
@@ -398,6 +370,11 @@ export const socialMedia = [
     icon: AiFillMail,
     link: "kavindulakshan2980@gmail.com",
   },
+  // {
+  //   id: "social-media-4",
+  //   icon: MdCall,
+  //   number: "+94704512641",
+  // },
 ];
 
 // Your professional summary

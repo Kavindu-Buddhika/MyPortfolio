@@ -4,7 +4,8 @@ import { socialMedia, aboutMe } from "../constants";
 import { profilePic } from "../assets";
 import { layout } from "../style";
 import { resumeLink } from "../constants";
-import { AiFillGithub } from "react-icons/ai";
+import { CgFileDocument } from "react-icons/cg";
+import { MdCall } from "react-icons/md";
 
 const Footer = () => (
   <footer id="contactMe" className="bg-gray-900 sm:px-16 px-6">
@@ -32,16 +33,23 @@ const Footer = () => (
               {React.createElement(social.icon)}
             </a>
           ))}
+          {/* Add telephone details separately */}
+          <div className="flex items-center text-white text-[25px] ml-1">
+            <MdCall /> {/* Import and use the phone icon */}
+            <span className="ml-3 text-[14px]">+94 70 451 2641</span>{" "}
+            {/* Telephone number */}
+          </div>
         </div>
 
         <div className="flex items-center">
           {/* styles is a prop */}
-          <a href={resumeLink} target="_blank">
-            <Button
-              styles="mt-10 mr-3 inline-flex items-center justify-center"
-              text="Resume"
-              icon={AiFillGithub}
-            />
+          <a
+            href={resumeLink}
+            target="_blank"
+            className="mt-8 mr-2 px-4 rounded-md py-2 inline-flex items-center justify-center text-[14px] font-poppins font-semibold text-white bg-emerald-600 hover:bg-emerald-700"
+          >
+            <CgFileDocument className="mr-2 text-[18px]" />
+            Resume
           </a>
         </div>
       </div>
@@ -50,7 +58,7 @@ const Footer = () => (
         <img
           src={profilePic}
           alt="Kavindu Buddhika"
-          className="w-[150px] h-[150px] border-2 border-teal-200 relative z-[5] rounded-full"
+          className="w-[150px] h-[150px] border-2 object-cover border-teal-200 relative z-[5] rounded-full"
         />
       </div>
     </div>

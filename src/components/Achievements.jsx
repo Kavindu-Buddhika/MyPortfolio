@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react"; // Added useRef
-import { BsLink45Deg } from "react-icons/bs";
+// import { BsLink45Deg } from "react-icons/bs";
 import { achievements } from "../constants";
-import { AiFillGithub } from "react-icons/ai";
-import { FaYoutube } from "react-icons/fa";
-import { TiNews } from "react-icons/ti";
+// import { AiFillGithub } from "react-icons/ai";
+// import { FaYoutube } from "react-icons/fa";
+// import { TiNews } from "react-icons/ti";
 import styles from "../style";
 
 const Achievements = () => {
@@ -14,21 +14,24 @@ const Achievements = () => {
   useEffect(() => {
     const updateCardWidth = () => {
       if (containerRef.current) {
-        const card = containerRef.current.querySelector('.achievement-card');
+        const card = containerRef.current.querySelector(".achievement-card");
         if (card) {
           const cardWidth = card.offsetWidth;
-          const cardMargin = parseInt(window.getComputedStyle(card).marginRight, 10); 
+          const cardMargin = parseInt(
+            window.getComputedStyle(card).marginRight,
+            10
+          );
 
-          setCardTotalWidth(cardWidth + cardMargin); 
+          setCardTotalWidth(cardWidth + cardMargin);
         }
       }
     };
 
-    updateCardWidth(); 
-    window.addEventListener("resize", updateCardWidth); 
+    updateCardWidth();
+    window.addEventListener("resize", updateCardWidth);
 
     return () => {
-      window.removeEventListener("resize", updateCardWidth); 
+      window.removeEventListener("resize", updateCardWidth);
     };
   }, []);
 
@@ -122,13 +125,21 @@ const AchievementCard = (props) => {
             ⚡ {props.content2}
           </p>
         )}
-        {props.content3 && (
-          <p className="font-poppins font-normal text-dimWhite text-sm mb-4">
-            🔥 {props.content3}
-          </p>
+        {props.link && (
+          // <a className="font-poppins font-normal text-dimWhite text-sm mb-4">
+          //   🔥 {props.link}
+          // </a>
+          <a
+            href={props.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-poppins font-normal text-blue-400 text-sm mb-4 hover:text-blue-300"
+          >
+            🔗 Verified
+          </a>
         )}
       </div>
-      <div className="flex flex-row mb-2 font-poppins font-normal text-dimWhite">
+      {/* <div className="flex flex-row mb-2 font-poppins font-normal text-dimWhite">
         {props.article && (
           <a
             className="inline-flex items-center mr-2 hover:text-teal-200"
@@ -169,7 +180,7 @@ const AchievementCard = (props) => {
             <BsLink45Deg size="1.5rem" className="inline" />
           </a>
         )}
-      </div>
+      </div> */}
     </div>
   );
 };

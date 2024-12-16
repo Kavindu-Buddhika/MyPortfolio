@@ -51,6 +51,7 @@ import uwu from "./uwu.png";
 import eligerlogo from "./eligerlogo.png";
 import villa from "./villa.png";
 import reviewer from "./reviewer.png";
+import moratuwalogo from "./moratuwalogo.png";
 
 export {
   quotes,
@@ -106,4 +107,5 @@ export {
   eligerlogo,
   villa,
   reviewer,
+  moratuwalogo,
 };

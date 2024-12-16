@@ -7,7 +7,6 @@ import {
   Hero,
   Education,
   SkillsAndExperience,
-  // ExtraCurricular,
   Footer,
   Projects,
   Loading,
@@ -63,7 +62,6 @@ const App = () => {
             >
               <div className={`${styles.boxWidth}`}>
                 <Projects />
-                {/* <ExtraCurricular /> */}
               </div>
             </div>
             <Footer />
