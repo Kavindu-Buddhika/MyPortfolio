@@ -12,6 +12,7 @@ import {
   Projects,
   Loading,
   Achievements,
+  BackToTopButton,
 } from "./components";
 
 const App = () => {
@@ -69,6 +70,7 @@ const App = () => {
           </motion.section>
         )}
       </AnimatePresence>
+      <BackToTopButton/>
     </div>
   );
 };

@@ -49,6 +49,8 @@ import icon from "./icon.jpg";
 import ethforall from "./ethforall.png";
 import uwu from "./uwu.png";
 import eligerlogo from "./eligerlogo.png";
+import villa from "./villa.png";
+import reviewer from "./reviewer.png";
 
 export {
   quotes,
@@ -102,4 +104,6 @@ export {
   ethforall,
   uwu,
   eligerlogo,
+  villa,
+  reviewer,
 };

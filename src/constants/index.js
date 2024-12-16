@@ -3,6 +3,8 @@ import {
   cscu,
   uwu,
   eligerlogo,
+  villa,
+  reviewer,
 } from "../assets";
 
 import {
@@ -238,7 +240,7 @@ export const projects = [
     title: "The-Villa-Hotel",
     github: "https://github.com/kavindu-mane/The-Villa-Hotel",
     link: "",
-    // image: ,
+    image: villa,
     content:
       "Streamlined Room Booking and Food Reservation Web Application",
     stack: [
@@ -283,7 +285,7 @@ export const projects = [
     id: "project-2",
     title: "ReViewer",
     github: "https://github.com/Kavindu-Buddhika/ReViewer",
-    // image: ,
+    image: reviewer,
     content:
       "Online Book Review Web Application by using Python Django Framework.",
     stack: [

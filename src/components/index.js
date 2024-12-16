@@ -10,6 +10,7 @@ import Footer from "./Footer";
 import Button from "./Button";
 import Loading from "./Loading";
 import Achievements from "./Achievements";
+import BackToTopButton from "./BackToTopButton";
 
 export {
   Navbar,
@@ -22,4 +23,5 @@ export {
   Button,
   Loading,
   Achievements,
+  BackToTopButton,
 };
