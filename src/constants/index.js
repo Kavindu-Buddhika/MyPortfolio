@@ -124,11 +124,11 @@ export const skills = [
         icon: SiPhp,
         name: "php",
       },
-      {
-        id: "pl-2",
-        icon: TbBrandCSharp,
-        name: "Csharp",
-      },
+      // {
+      //   id: "pl-2",
+      //   icon: TbBrandCSharp,
+      //   name: "Csharp",
+      // },
       {
         id: "pl-3",
         icon: SiJavascript,
@@ -174,11 +174,11 @@ export const skills = [
         icon: SiTailwindcss,
         name: "Tailwind CSS", // CSS framework.
       },
-      {
-        id: "f-4",
-        icon: SiDotnet,
-        name: ".NET", // Csharp framework.
-      },
+      // {
+      //   id: "f-4",
+      //   icon: SiDotnet,
+      //   name: ".NET", // Csharp framework.
+      // },
       {
         id: "f-5",
         icon: TbBrandNextjs,

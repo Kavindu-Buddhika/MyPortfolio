@@ -1,9 +1,6 @@
 import React, { useState, useEffect, useRef } from "react"; // Added useRef
-// import { BsLink45Deg } from "react-icons/bs";
 import { achievements } from "../constants";
-// import { AiFillGithub } from "react-icons/ai";
-// import { FaYoutube } from "react-icons/fa";
-// import { TiNews } from "react-icons/ti";
+
 import styles from "../style";
 
 const Achievements = () => {
@@ -126,9 +123,6 @@ const AchievementCard = (props) => {
           </p>
         )}
         {props.link && (
-          // <a className="font-poppins font-normal text-dimWhite text-sm mb-4">
-          //   🔥 {props.link}
-          // </a>
           <a
             href={props.link}
             target="_blank"
@@ -139,48 +133,6 @@ const AchievementCard = (props) => {
           </a>
         )}
       </div>
-      {/* <div className="flex flex-row mb-2 font-poppins font-normal text-dimWhite">
-        {props.article && (
-          <a
-            className="inline-flex items-center mr-2 hover:text-teal-200"
-            href={props.article}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <TiNews size="1.5rem" className="inline" />
-          </a>
-        )}
-        {props.youtube && (
-          <a
-            className="inline-flex items-center mr-2 hover:text-teal-200"
-            href={props.youtube}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaYoutube size="1.5rem" className="inline" />
-          </a>
-        )}
-        {props.github && (
-          <a
-            className="inline-flex items-center mr-2 hover:text-teal-200"
-            href={props.github}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <AiFillGithub size="1.5rem" className="inline" />
-          </a>
-        )}
-        {props.project && (
-          <a
-            className="inline-flex items-center hover:text-teal-200"
-            href={props.project}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <BsLink45Deg size="1.5rem" className="inline" />
-          </a>
-        )}
-      </div> */}
     </div>
   );
 };
